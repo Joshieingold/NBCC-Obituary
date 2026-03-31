@@ -37,6 +37,7 @@ html {
     justify-content: center;
     transition: 0.5s ease-in-out;
     cursor: pointer;
+    backdrop-filter: blur(10px);
 }
 .desc {
     font-style: italic;
@@ -47,6 +48,9 @@ html {
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+.card:last-child {
+    margin-bottom: 100px;
 }
 
 .group-container h2 {
