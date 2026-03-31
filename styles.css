@@ -15,9 +15,7 @@ html {
     margin: 0;
     border: 0;
     padding: 0;
-    background-image: url(https://cdn.pixabay.com/photo/2023/08/18/11/35/dove-8198314_640.png);
-    background-position: center center;
-    background-attachment: fixed;
+    background-image: url(background.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -53,13 +51,16 @@ html {
     margin-bottom: 100px;
 }
 
-.group-container h2 {
+.group-title {
     padding: 10px;
     width: 50%;
+    height: 100px;
     text-align: center;
-    background-color: black;
-    color: goldenrod;
-    border-radius: 7px;
+    background-image: url(./banner.png);
+    color: black;
+    background-position: center;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
 }
 .card:hover {
     transform: translateY(-10px);
