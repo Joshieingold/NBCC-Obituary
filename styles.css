@@ -67,6 +67,7 @@ html {
 }
 .content-container {
     display: flex;
+    flex-direction: row;
     width: 100%;
     justify-content: top;
     align-items: flex-start;
