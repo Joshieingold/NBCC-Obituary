@@ -1,0 +1,168 @@
+{
+    "heaven": [
+        {
+            "name": "Emmarose",
+            "desc": "She was the class rep who worked the hardest",
+            "group": "A",
+            "year_of_death": 1
+        },
+        {
+            "name": "Adil",
+            "desc": "He just wasn't obsessed enough",
+            "group": "A",
+            "year_of_death": 1
+        },
+        {
+            "name": "Kalan",
+            "desc": "Should have used reverse cursed technique",
+            "group": "A",
+            "year_of_death": 1
+        },
+        {
+            "name": "Parker",
+            "desc": "",
+            "group": "A",
+            "year_of_death": 1
+        },
+        {
+            "name": "Reanne",
+            "desc": "",
+            "group": "A",
+            "year_of_death": 1
+        },
+        {
+            "name": "Tyson",
+            "desc": "",
+            "group": "A",
+            "year_of_death": 1
+        },
+        {
+            "name": "Mike",
+            "desc": "He would have hated JavaScript",
+            "group": "B",
+            "year_of_death": 1
+        },
+        {
+            "name": "Illia",
+            "desc": "May we hope he is watching The Lion King in a better place.",
+            "group": "B",
+            "year_of_death": 1
+        },
+        {
+            "name": "Nick",
+            "desc": "Il ne pourra jamais boire cette bière avec Mitch.",
+            "group": "B",
+            "year_of_death": 1
+        },
+        {
+            "name": "Shawn",
+            "desc": "Always hated arrays.",
+            "group": "B",
+            "year_of_death": 1
+        }
+    ],
+
+    "purgatory": [
+        {
+            "name": "Lucas",
+            "desc": "",
+            "group": "B",
+            "year_of_death": 0,
+            "faction": "Programmer Analyst"
+        },
+        {
+            "name": "Anderson",
+            "desc": "",
+            "group": "B",
+            "year_of_death": 0,
+            "faction": "Programmer Analyst"
+        },
+        {
+            "name": "Aiden",
+            "desc": "",
+            "group": "B",
+            "year_of_death": 0,
+            "faction": "Web and Mobile Design"
+        }
+    ],
+
+    "hell": [
+        {
+            "name": "Josh",
+            "desc": "",
+            "group": "B",
+            "year_of_death": 0,
+            "faction": "Programmer Analyst"
+        },
+        {
+            "name": "Ethan",
+            "desc": "",
+            "group": "B",
+            "year_of_death": 0,
+            "faction": "Programmer Analyst"
+        },
+        {
+            "name": "Elijah",
+            "desc": "",
+            "group": "B",
+            "year_of_death": 0,
+            "faction": "Programmer Analyst"
+        },
+        {
+            "name": "Rory",
+            "desc": "",
+            "group": "B",
+            "year_of_death": 0,
+            "faction": "Programmer Analyst"
+        },
+        {
+            "name": "Jeremy",
+            "desc": "",
+            "group": "B",
+            "year_of_death": 0,
+            "faction": "Programmer Analyst"
+        },
+        {
+            "name": "Sarah",
+            "desc": "",
+            "group": "B",
+            "year_of_death": 0,
+            "faction": "Programmer Analyst"
+        },
+        {
+            "name": "Alex",
+            "desc": "",
+            "group": "B",
+            "year_of_death": 0,
+            "faction": "Embedded Systems"
+        },
+        {
+            "name": "Tobi",
+            "desc": "",
+            "group": "B",
+            "year_of_death": 0,
+            "faction": "???"
+        },
+        {
+            "name": "Tyler",
+            "desc": "",
+            "group": "B",
+            "year_of_death": 0,
+            "faction": "Embedded Systems"
+        },
+        {
+            "name": "Vitor",
+            "desc": "",
+            "group": "A",
+            "year_of_death": 0,
+            "faction": "Programmer Analyst"
+        },
+        {
+            "name": "Abdin",
+            "desc": "",
+            "group": "A",
+            "year_of_death": 0,
+            "faction": "Programmer Analyst"
+        }
+    ]
+}

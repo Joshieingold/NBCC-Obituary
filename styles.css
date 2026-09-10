@@ -2,109 +2,375 @@
     box-sizing: border-box;
     margin: 0;
 }
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-
-    font-family: cursive, fantasy;
-}
 
 html {
-    height: 100%;
-    margin: 0;
-    border: 0;
-    padding: 0;
-    background-image: url(background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.card {
-    display: flex;
-    background-color: #f4a46098;
-    border-radius: 7px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
-    justify-content: center;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-    backdrop-filter: blur(10px);
-}
-.desc {
-    font-style: italic;
-}
-.group-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
+    min-height: 100%;
+    background: #08080c;
 }
 
-.group-title {
-    padding: 10px;
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Georgia, "Times New Roman", serif;
+    color: #f5f5f5;
+
+    background: radial-gradient(
+        circle at top,
+        #24243a 0%,
+        #0c0c12 45%,
+        #050507 100%
+    );
+}
+
+section {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
     width: 100%;
-    height: 150px;
+    min-height: 100vh;
+
+    padding: 70px 40px 100px;
+
+    overflow: hidden;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    background: radial-gradient(
+        circle at 50% 0%,
+        rgba(255, 255, 255, 0.08),
+        transparent 45%
+    );
+}
+
+#heaven {
+    background: url("./heaven.png") center / cover no-repeat;
+    color: #17202d;
+}
+
+#heaven h1 {
+    color: #17202d;
+    text-shadow: 0 2px 10px rgba(255, 255, 255, 0.7);
+}
+
+#purgatory {
+    background: url("./purgatory.webp") center / cover no-repeat;
+    color: #eee4f4;
+}
+
+#purgatory h1 {
+    color: #17202d;
+    text-shadow: 0 0 15px rgba(210, 160, 255, 0.35);
+}
+
+#hell {
+    background: url("./hell.png") center / cover no-repeat;
+    color: #ffe9e9;
+}
+
+#hell h1 {
+    color: #ffdede;
+    text-shadow: 0 0 18px rgba(255, 70, 70, 0.4);
+}
+
+section > h1 {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 900px;
+
+    margin-bottom: 55px;
+    padding: 0 20px;
+
     text-align: center;
-    background-image: url(./banner.png);
-    color: black;
-    background-position: center;
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
+
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.15;
+
+    letter-spacing: 1px;
 }
-.group-title h2 {
+
+.card-holder {
+    position: relative;
+    z-index: 1;
+
     display: flex;
-    height: 75%;
+    flex-wrap: wrap;
+
     justify-content: center;
-    align-items: center;
-}
-.card:hover {
-    transform: translateY(-10px);
-}
-.card:last-child {
-    margin-bottom: 20px;
-}
-.content-container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: top;
     align-items: flex-start;
+
+    width: min(1100px, 100%);
+
+    gap: 25px;
 }
+
+#heaven .card-holder {
+    flex-direction: column;
+    align-items: center;
+}
+
+#hell .card-holder,
+#purgatory .card-holder {
+    flex-direction: row;
+}
+
+#firstYearSection {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+
+    gap: 35px;
+}
+
+.group-a,
+.group-b,
+#secondYearSection {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+
+    gap: 20px;
+}
+
+.group-a > h1,
+.group-b > h1 {
+    width: 100%;
+
+    margin-bottom: 5px;
+
+    text-align: center;
+
+    font-size: 2rem;
+}
+
+.card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 250px;
+    min-height: 145px;
+
+    padding: 25px 20px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.16),
+        rgba(255, 255, 255, 0.05)
+    );
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(12px);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.24),
+        rgba(255, 255, 255, 0.08)
+    );
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.4),
+        0 0 25px rgba(255, 255, 255, 0.08);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+
+    font-size: 1.35rem;
+    letter-spacing: 0.5px;
+}
+
+.desc {
+    max-width: 210px;
+
+    color: rgba(255, 255, 255, 0.75);
+
+    font-size: 0.95rem;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+#heaven .card {
+    background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.35),
+        rgba(220, 240, 255, 0.15)
+    );
+
+    border-color: rgba(255, 255, 255, 0.45);
+
+    color: #17202d;
+
+    box-shadow:
+        0 12px 30px rgba(25, 50, 80, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+#heaven .desc {
+    color: rgba(23, 32, 45, 0.7);
+}
+
+#purgatory .card {
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.45),
+        0 0 25px rgba(150, 90, 180, 0.08);
+}
+
+#hell .card {
+    background: linear-gradient(
+        145deg,
+        rgba(255, 100, 100, 0.15),
+        rgba(50, 5, 10, 0.3)
+    );
+
+    border-color: rgba(255, 120, 120, 0.2);
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.5),
+        0 0 25px rgba(255, 30, 30, 0.08);
+}
+
+.programmer-analyst {
+    background: linear-gradient(
+        145deg,
+        rgba(0, 3, 100, 0.45),
+        rgba(0, 5, 35, 0.3)
+    ) !important;
+}
+
+.embedded-systems {
+    background: linear-gradient(
+        145deg,
+        rgba(100, 3, 0, 0.45),
+        rgba(35, 5, 0, 0.3)
+    ) !important;
+}
+
+.web-and-mobile-design {
+    background: linear-gradient(
+        145deg,
+        rgba(0, 100, 0, 0.45),
+        rgba(0, 35, 0, 0.3)
+    ) !important;
+}
+
 @media (max-width: 768px) {
-    .content-container {
-        flex-direction: column;
+    section {
+        min-height: 100svh;
+
+        padding: 45px 15px 70px;
     }
-    .group-container {
+
+    section > h1 {
+        margin-bottom: 35px;
+        padding: 0 10px;
+
+        font-size: clamp(1.8rem, 9vw, 2.7rem);
+    }
+
+    .card-holder {
         width: 100%;
+        gap: 18px;
     }
-    html {
-        background-position: center center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
+
+    /* Heaven */
+    #firstYearSection {
+        flex-direction: column;
+        gap: 30px;
     }
-    .card-container {
-        justify-content: center;
+
+    .group-a,
+    .group-b,
+    #secondYearSection {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .group-a > h1,
+    .group-b > h1 {
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+    }
+
+    /* Hell + Purgatory */
+    #hell .card-holder,
+    #purgatory .card-holder {
+        flex-direction: column;
         align-items: center;
     }
+
+    /* Cards */
     .card {
-        width: 90%;
+        width: min(100%, 360px);
+        min-height: 130px;
+
+        padding: 22px 18px;
     }
-    .group-title {
-        background-size: 90% 100%;
+
+    .card h3 {
+        font-size: 1.25rem;
+    }
+
+    .desc {
+        max-width: 280px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    section > h1 {
+        font-size: 1.7rem;
+    }
+
+    .card {
+        width: 100%;
     }
 }
