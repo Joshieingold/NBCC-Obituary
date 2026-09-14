@@ -88,6 +88,13 @@
 
     "hell": [
         {
+            "name": "Jayden",
+            "desc": "It's cooler here than Fredericton",
+            "group": "B",
+            "year_of_death": 0,
+            "faction": "Embedded Systems"
+        },
+        {
             "name": "Josh",
             "desc": "",
             "group": "B",
