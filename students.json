@@ -71,6 +71,12 @@
             "faction": "Programmer Analyst"
         },
         {
+            "name": "Jacob",
+            "desc": "",
+            "group": "B",
+            "year_of_death": 0
+        },
+        {
             "name": "Anderson",
             "desc": "",
             "group": "B",
@@ -170,6 +176,20 @@
             "group": "A",
             "year_of_death": 0,
             "faction": "Programmer Analyst"
+        },
+        {
+            "name": "Andre",
+            "desc": "",
+            "group": "",
+            "year_of_death": 0,
+            "faction": "Programmer Analyst"
+        },
+        {
+            "name": "Jerffery",
+            "desc": "",
+            "group": "A",
+            "year_of_death": 0,
+            "faction": ""
         }
     ]
 }
