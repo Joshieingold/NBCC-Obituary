@@ -19,12 +19,6 @@
             "year_of_death": 1
         },
         {
-            "name": "Parker",
-            "desc": "",
-            "group": "A",
-            "year_of_death": 1
-        },
-        {
             "name": "Reanne",
             "desc": "",
             "group": "A",
@@ -115,13 +109,6 @@
             "faction": "Programmer Analyst"
         },
         {
-            "name": "Elijah",
-            "desc": "",
-            "group": "B",
-            "year_of_death": 0,
-            "faction": "Programmer Analyst"
-        },
-        {
             "name": "Rory",
             "desc": "",
             "group": "B",
@@ -190,6 +177,19 @@
             "group": "A",
             "year_of_death": 0,
             "faction": ""
+        },
+        {
+            "name": "Parker",
+            "desc": "",
+            "group": "A",
+            "year_of_death": 0
+        },
+        {
+            "name": "Elijah",
+            "desc": "Say it with me.\nHe\nWAS\nCARRIED",
+            "group": "B",
+            "year_of_death": 0,
+            "faction": "Programmer Analyst"
         }
     ]
 }
