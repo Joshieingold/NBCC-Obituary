@@ -53,6 +53,13 @@
             "desc": "Always hated arrays.",
             "group": "B",
             "year_of_death": 1
+        },
+        {
+            "name": "Alex",
+            "desc": "Who will manage the discord now?",
+            "group": "B",
+            "year_of_death": 2,
+            "faction": "Embedded Systems"
         }
     ],
 
@@ -128,13 +135,6 @@
             "group": "B",
             "year_of_death": 0,
             "faction": "Programmer Analyst"
-        },
-        {
-            "name": "Alex",
-            "desc": "",
-            "group": "B",
-            "year_of_death": 0,
-            "faction": "Embedded Systems"
         },
         {
             "name": "Tobi",
